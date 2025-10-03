@@ -1,5 +1,5 @@
 # Funcionamento do Código 
-# 🎧 Clone Spotify Premium Landing Page
+# 🎧 Clone Spotify Premium Plans Landing Page
 
 Este é um projeto de estudo e demonstração desenvolvido para replicar a seção de planos Premium da landing page do Spotify, focando em boas práticas de HTML, CSS e interatividade simples com JavaScript.
 
