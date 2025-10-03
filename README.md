@@ -1,11 +1,11 @@
 # Funcionamento do Código 
 # 🎧 Clone Spotify Premium Landing Page
 
-Link: <https://spotify-landing-page-clone.vercel.app/>
-
 Este é um projeto de estudo e demonstração desenvolvido para replicar a seção de planos Premium da landing page do Spotify, focando em boas práticas de HTML, CSS e interatividade simples com JavaScript.
 
 O projeto foi desenvolvido como parte da etapa técnica do processo seletivo da **CIMATEC Jr.**
+
+Link: <https://spotify-landing-page-clone.vercel.app/>
 
 ## ✨ Funcionalidades
 
