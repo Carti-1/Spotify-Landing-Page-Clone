@@ -1,0 +1,158 @@
+/* Estilos para a seção de planos */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.planos {
+    text-align: center;
+    max-width: 1200px;
+}
+
+.planos h1 {
+    font-size: 2.5rem; 
+    margin-bottom: 10px;
+}
+
+.planos p {
+    color: #b3b3b3;
+    margin-bottom: 40px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+.plano-card {
+    background-color: #181818;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.plano-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.plano-card p {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.plano-card p span {
+    font-weight: bold;
+}
+
+.plano-card ul {
+    list-style-position: inside;
+    padding-left: 0;
+    flex-grow: 1; 
+}
+
+.plano-card ul li {
+    margin-bottom: 10px;
+    color: #b3b3b3;
+}
+
+.btn-plano {
+    background-color: #1db954; 
+    color: #121212;
+    border: none;
+    padding: 12px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: transform 0.2s;
+    margin-top: 20px;
+}
+
+.btn-plano:hover {
+    transform: scale(1.05);
+    background-color: #1ed760;
+}
+
+.carousel {
+    position: relative;
+    padding: 0 40px; 
+    width: 100%;
+}
+
+.carousel-container {
+    text-align: center;
+    padding: 60px 0;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-container h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.image-carousel {
+    display: flex;
+    overflow: hidden; 
+    gap: 20px;
+    cursor: grab;
+    scroll-behavior: smooth; 
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    width: calc(100% - 80px); 
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none; 
+}
+
+.control-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    pointer-events: all;
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+
+.control-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.length-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #555;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #fff;
+}

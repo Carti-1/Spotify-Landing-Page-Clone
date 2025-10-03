@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/modal.css"> 
+    <link rel="stylesheet" href="src/styles/footer.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/footer.css">
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="icon" type="image/png" href="https://www.spotify.com/favicon.ico">
+    <title>Spotify Premium</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-brands fa-spotify" id="nav_logo">SPOTIFY</i>
+
+            <ul id="nav_list">
+                <li class="nav-item"><a href="#home">Início</a></li>
+                <li class="nav-item"><a href="#features">Premium</a></li>
+                <li class="nav-item"><a href="#help">Suporte</a></li>
+                <li class="nav-item"><a href="#downloads">Baixar</a></li>
+            </ul>
+
+            <div class="btn-default">
+                <a href="#signup">Inscrever-se</a>
+                <a href="#signin">Entrar</a>
+            </div>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item"><a href="#home">Início</a></li>
+                <li class="nav-item"><a href="#features">Premium</a></li>
+                <li class="nav-item"><a href="#help">Suporte</a></li>
+                <li class="nav-item"><a href="#downloads">Baixar</a></li>
+                <li class="nav-item"><a href="#signup">Inscrever-se</a></li>
+                <li class="nav-item"><a href="#signin">Entrar</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+    <section class="planos" id="features">
+        <h1>Escolha seu plano Premium</h1>
+        <p>Escute sem limites no seu celular, alto-falante e em outros aparelhos.</p>
+
+        <div class="cards-container">
+            <div class="plano-card">
+                <h3>Individual</h3>
+                <p><span>R$ 21,90/mês</span></p>
+                <p>1 conta</p>
+                <button class="btn-plano" data-plan="individual">Saber Mais</button>
+            </div>
+
+            <div class="plano-card">
+                <h3>Duo</h3>
+                <p><span>R$ 27,90/mês</span></p>
+                <p>2 contas</p>
+                <button class="btn-plano" data-plan="duo">Saber Mais</button>
+            </div>
+
+            <div class="plano-card">
+                <h3>Família</h3>
+                <p><span>R$ 34,90/mês</span></p>
+                <p>Até 6 contas</p>
+                <button class="btn-plano" data-plan="familia">Saber Mais</button>
+            </div>
+
+            <div class="plano-card">
+                <h3>Universitário</h3>
+                <p><span>R$ 11,90/mês</span></p>
+                <p>1 conta com desconto</p>
+                <button class="btn-plano" data-plan="universitario">Saber Mais</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="planos" id="features">
+        </section>
+
+    <section class="carousel-container" id="downloads">
+    <h2>Ouça no seu dispositivo favorito</h2>
+    <div class="carousel">
+        <div class="image-carousel">
+            <img src="https://img.odcdn.com.br/wp-content/uploads/2022/07/Spotify.jpg" alt="Spotify no Celular">
+            <img src="https://img.odcdn.com.br/wp-content/uploads/2023/10/Capa-9.jpg" alt="Spotify no Computador">
+            <img src="https://blog.symphonic.com/wp-content/uploads/sites/11/2018/02/spotify-for-artists-optimize-.png" alt="Spotify no Tablet">
+            <img src="https://t.ctcdn.com.br/-5wEYvvicEhl2VOyMvDNp9C0pJc=/1200x675/smart/i567704.jpeg" alt="Spotify na SmartTV">
+            <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2020/11/Xbox-banner.png" alt="Spotify no console">
+        </div>
+        <div class="controls">
+            <button id="prev-slide" class="control-button"><i class="fa-solid fa-chevron-left"></i></button>
+            <button id="next-slide" class="control-button"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        <div class="length-dots">
+            <div class="dot"></div>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <i class="fa-brands fa-spotify" id="footer_logo">SPOTIFY</i>
+        
+        <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        
+        <p>Desenvolvido para etapa técnica da CIMATEC jr.</p>
+    </div>
+</footer>
+
+<div id="info-modal" class="modal-overlay">
+    <div class="modal-content">
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <ul id="modal-features"></ul>
+        <button id="close-modal">Fechar</button>
+    </div>
+</div>
+
+<script src="src/styles/javascript/script.js"></script>
+    
+</body>
+</html>
